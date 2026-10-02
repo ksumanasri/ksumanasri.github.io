@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // --- Cursor & Spotlight Interactions ---
-    const cursorDot = document.getElementById('cursor-dot');
-    const cursorRing = document.getElementById('cursor-ring');
+    let cursorDot = document.getElementById('cursor-dot');
+    let cursorRing = document.getElementById('cursor-ring');
     const cursorSpotlight = document.getElementById('cursor-spotlight');
     
     if (!isTouchDevice && !prefersReducedMotion) {
@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ring.id = 'cursor-ring';
             document.body.appendChild(ring);
         }
+        cursorDot = document.getElementById('cursor-dot');
+        cursorRing = document.getElementById('cursor-ring');
 
         let mouseX = window.innerWidth / 2;
         let mouseY = window.innerHeight / 2;
@@ -40,10 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 firstMove = true;
             }
             
-            const dot = document.getElementById('cursor-dot');
-            if(dot) {
-                dot.style.left = `${mouseX}px`;
-                dot.style.top = `${mouseY}px`;
+            if(cursorDot) {
+                cursorDot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate3d(-50%, -50%, 0)`;
             }
         });
 
@@ -58,10 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ringX += (mouseX - ringX) * 0.2;
             ringY += (mouseY - ringY) * 0.2;
             
-            const ring = document.getElementById('cursor-ring');
-            if(ring) {
-                ring.style.left = `${ringX}px`;
-                ring.style.top = `${ringY}px`;
+            if(cursorRing) {
+                cursorRing.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate3d(-50%, -50%, 0)`;
             }
 
             // Smooth background spotlight
@@ -80,12 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const interactives = document.querySelectorAll('a, button, .magnetic, .glass-card');
         interactives.forEach(el => {
             el.addEventListener('mouseenter', () => {
-                const r = document.getElementById('cursor-ring');
-                if(r) r.classList.add('hovering');
+                if(cursorRing) cursorRing.classList.add('hovering');
             });
             el.addEventListener('mouseleave', () => {
-                const r = document.getElementById('cursor-ring');
-                if(r) r.classList.remove('hovering');
+                if(cursorRing) cursorRing.classList.remove('hovering');
             });
         });
 

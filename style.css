@@ -113,8 +113,8 @@ ul { list-style: none; }
 /* ==========================================================================
    Custom Cursor
    ========================================================================== */
-#cursor-dot { position: fixed; width: 4px; height: 4px; background: var(--clr-cyan); border-radius: 50%; pointer-events: none; z-index: 10000; transform: translate(-50%, -50%); box-shadow: 0 0 10px var(--clr-cyan); transition: opacity 0.2s; }
-#cursor-ring { position: fixed; width: 30px; height: 30px; border: 1px solid rgba(0, 240, 255, 0.4); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); transition: width 0.2s, height 0.2s, border-color 0.2s, background 0.2s; }
+#cursor-dot { position: fixed; width: 4px; height: 4px; background: var(--clr-cyan); border-radius: 50%; pointer-events: none; z-index: 10000; transform: translate3d(-50%, -50%, 0); box-shadow: 0 0 10px var(--clr-cyan); transition: opacity 0.2s; will-change: transform; }
+#cursor-ring { position: fixed; width: 30px; height: 30px; border: 1px solid rgba(0, 240, 255, 0.4); border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate3d(-50%, -50%, 0); transition: width 0.2s, height 0.2s, border-color 0.2s, background 0.2s; will-change: transform; }
 #cursor-ring.hovering { width: 50px; height: 50px; border-color: var(--clr-cyan); background: rgba(0, 240, 255, 0.05); backdrop-filter: blur(2px); }
 
 /* Scroll Progress */
@@ -153,9 +153,9 @@ ul { list-style: none; }
    Recruiter Snapshot
    =========================================================================== */
 .snapshot { padding-top: 64px; padding-bottom: 32px; }
-.snapshot-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+.snapshot-heading { display: block; margin-bottom: 24px; }
 .eyebrow { color: var(--clr-cyan); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; }
-.snapshot-title { font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 600; color: var(--clr-white); }
+.snapshot-title { margin-top: 8px; font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 600; color: var(--clr-white); }
 .snapshot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .snapshot-item { padding: 24px; display: flex; flex-direction: column; gap: 8px; min-height: 150px; }
 .snapshot-label { color: var(--clr-cyan); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -445,8 +445,6 @@ ul { list-style: none; }
    .btn-quiet { padding-top: 10px; padding-bottom: 10px; }
 
    .snapshot { padding-top: 48px; }
-   .snapshot-heading { display: block; }
-   .snapshot-title { margin-top: 8px; }
    .snapshot-grid { grid-template-columns: 1fr; }
    .snapshot-item { min-height: auto; }
     
