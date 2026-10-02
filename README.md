@@ -12,9 +12,7 @@ The site turns academic work and practical learning into a clear professional na
 
 ## Live Portfolio
 
-Add the deployed URL here after publishing with GitHub Pages:
-
-`https://<your-github-username>.github.io/<repository-name>/`
+[Open the live portfolio](https://ksumanasri.github.io/)
 
 ## Highlights
 
