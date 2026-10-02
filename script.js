@@ -278,16 +278,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('nav-menu');
 
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
+        const toggleMenu = () => {
+            const isActive = hamburger.classList.contains('active');
+            hamburger.classList.toggle('active', !isActive);
+            navMenu.classList.toggle('active', !isActive);
+            hamburger.setAttribute('aria-expanded', !isActive);
+        };
+
+        const closeMenu = () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        };
+
+        hamburger.addEventListener('click', toggleMenu);
 
         navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
+                hamburger.focus();
+            }
         });
     }
 });

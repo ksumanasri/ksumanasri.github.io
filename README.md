@@ -26,9 +26,11 @@ The site turns academic work and practical learning into a clear professional na
 - Scroll progress indicator and section scrollspy
 - Animated particle background with touch-device support
 - Interactive image-processing project case study
+- Recruiter-focused "At a glance" profile snapshot
+- GitHub profile CTAs in the hero and footer
 - Resume download action
 - Email, phone, and location contact actions
-- SEO metadata and Open Graph sharing metadata
+- Canonical URL, Open Graph, Twitter card, and Person structured metadata
 
 ## Design and Engineering Decisions
 
@@ -157,6 +159,7 @@ The portfolio includes:
 
 - Semantic navigation, main content, sections, and footer
 - Descriptive page metadata
+- Canonical, social sharing, and structured Person metadata
 - Keyboard-visible focus indicators
 - A skip navigation link
 - Accessible mobile-menu state using `aria-expanded`
