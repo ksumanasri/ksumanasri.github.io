@@ -32,6 +32,20 @@ The site turns academic work and practical learning into a clear professional na
 - Email, phone, and location contact actions
 - Canonical URL, Open Graph, Twitter card, and Person structured metadata
 
+## Skills at a Glance
+
+These badges use high-contrast colors so the main technologies are easy to scan on GitHub's light or dark themes.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-0F6CBD?style=for-the-badge&logo=databricks&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Java](https://img.shields.io/badge/Java-Basic-E76F00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=111827)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-24292F?style=for-the-badge&logo=github&logoColor=white)
+
 ## Design and Engineering Decisions
 
 | Decision | Reason |
