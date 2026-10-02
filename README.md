@@ -102,6 +102,8 @@ portfolio1/
 ├── style.css        # Theme, layout, responsive styles, and animations
 ├── script.js        # Navigation, scroll behavior, particles, and interactions
 ├── Resume.pdf       # Downloadable resume
+├── robots.txt       # Crawler access rules and sitemap location
+├── sitemap.xml      # Canonical GitHub Pages URL for search engines
 └── README.md        # Project documentation
 ```
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ksumanasri.github.io/sitemap.xml
