@@ -7,8 +7,7 @@ The site is designed as a polished, accessible, static portfolio that presents a
 ## Live Portfolio
 
 Add the deployed URL here after publishing with GitHub Pages:
-
-`https://<your-github-username>.github.io/<repository-name>/`
+https://github.com/ksumanasri/ksumanasri.github.io.git`
 
 ## Highlights
 
