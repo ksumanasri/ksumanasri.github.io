@@ -216,6 +216,7 @@ Vadlamudi, Guntur, India
 
 - Email: `sumanasri813@gmail.com`
 - Phone: `+91-7794824325`
+- LinkedIn: [sumanasri-konduri-6bb951347](https://www.linkedin.com/in/sumanasri-konduri-6bb951347/)
 
 ## License
 
