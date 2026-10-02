@@ -153,9 +153,9 @@ ul { list-style: none; }
    Recruiter Snapshot
    =========================================================================== */
 .snapshot { padding-top: 64px; padding-bottom: 32px; }
-.snapshot-heading { display: block; margin-bottom: 24px; }
+.snapshot-heading { display: block; width: 100%; margin-bottom: 24px; text-align: left; }
 .eyebrow { color: var(--clr-cyan); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; }
-.snapshot-title { margin-top: 8px; font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 600; color: var(--clr-white); }
+.snapshot-title { display: block; width: 100%; margin-top: 8px; font-size: clamp(1.25rem, 2.4vw, 1.8rem); font-weight: 600; color: var(--clr-white); text-align: left; }
 .snapshot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .snapshot-item { padding: 24px; display: flex; flex-direction: column; gap: 8px; min-height: 150px; }
 .snapshot-label { color: var(--clr-cyan); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
