@@ -1,13 +1,20 @@
 # Konduri Sumanasri | Data Operations & AI Portfolio
 
-A responsive personal portfolio for Konduri Sumanasri, an M.Tech student focused on data operations, image processing, OpenCV, Python, SQL, and AI workflow support.
+![Portfolio status](https://img.shields.io/badge/status-live-00c7b7?style=flat-square)
+![Built with HTML CSS JS](https://img.shields.io/badge/built%20with-HTML%20%7C%20CSS%20%7C%20JavaScript-111827?style=flat-square)
+![Hosted on GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-111827?style=flat-square)
 
-The site is designed as a polished, accessible, static portfolio that presents academic experience, technical skills, coursework, internship experience, and an image-segmentation case study.
+A focused personal portfolio for Konduri Sumanasri, an M.Tech student building skills in data operations, image processing, OpenCV, Python, SQL, and AI workflow support.
+
+The site turns academic work and practical learning into a clear professional narrative. It presents technical skills, education, coursework, internship experience, and an image-segmentation case study through a responsive, accessible static web experience.
+
+> **Portfolio goal:** communicate technical capability, attention to detail, and readiness for opportunities in data operations, computer vision, AI workflows, and software development.
 
 ## Live Portfolio
 
 Add the deployed URL here after publishing with GitHub Pages:
-https://github.com/ksumanasri/ksumanasri.github.io.git`
+
+`https://<your-github-username>.github.io/<repository-name>/`
 
 ## Highlights
 
@@ -24,6 +31,16 @@ https://github.com/ksumanasri/ksumanasri.github.io.git`
 - Resume download action
 - Email, phone, and location contact actions
 - SEO metadata and Open Graph sharing metadata
+
+## Design and Engineering Decisions
+
+| Decision | Reason |
+| --- | --- |
+| Vanilla HTML, CSS, and JavaScript | Keeps the site fast, portable, and easy to deploy on static hosting. |
+| CSS custom properties | Makes the visual system easier to maintain and customize. |
+| Semantic HTML and focus states | Improves navigation for keyboard and assistive-technology users. |
+| Progressive enhancement | The core portfolio content remains available even when animation is reduced or unavailable. |
+| Lightweight canvas particles | Adds visual identity while keeping the interaction layer dependency-free. |
 
 ## Portfolio Sections
 
@@ -49,6 +66,8 @@ A computer-vision project focused on preparing and analyzing labelled image data
 - Labelled image dataset handling
 - Image analysis and segmentation workflow support
 - Model testing and documentation of observations
+
+The portfolio presents this work as a case study with the problem context, approach, tools, contribution, and learning outcome. It intentionally avoids claiming unsupported model metrics or fabricated production results.
 
 ## Technology Stack
 
@@ -105,7 +124,6 @@ A local server is recommended when testing downloads, browser security behavior,
 5. Select **Deploy from a branch**.
 6. Choose the main branch and the root folder.
 7. Save the configuration and wait for GitHub Pages to publish the site.
-8. Update the Live Portfolio URL near the top of this README.
 
 ## Customization
 
@@ -135,7 +153,7 @@ Edit the CSS variables at the beginning of `style.css` to change:
 
 Only add GitHub or live-demo links when they point to real, publicly available destinations. Place them in the relevant project section in `index.html`.
 
-## Accessibility Notes
+## Accessibility and Quality
 
 The portfolio includes:
 
@@ -148,6 +166,17 @@ The portfolio includes:
 - Reduced-motion handling
 - Native cursor support for precise interaction
 - Decorative background elements hidden from assistive technology
+
+The implementation was checked for:
+
+- responsive behavior from 320px mobile widths through desktop layouts;
+- mobile-menu state changes through `aria-expanded`;
+- Escape-key menu dismissal and focus return;
+- visible keyboard focus indicators;
+- reduced-motion support;
+- missing CSS variables and invalid icon references;
+- horizontal overflow; and
+- browser console errors during normal page loading.
 
 ## Quality Checklist
 
