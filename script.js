@@ -195,6 +195,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const timelineSection = document.getElementById('education');
     const timelineProgressH = document.querySelector('.timeline-progress-h');
 
+    if (timelineSection) {
+        timelineSection.addEventListener('keydown', (event) => {
+            if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+            timelineSection.scrollBy({
+                left: event.key === 'ArrowRight' ? 240 : -240,
+                behavior: 'smooth'
+            });
+            event.preventDefault();
+        });
+    }
+
     const handleScroll = () => {
         // 1. Progress Bar
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;

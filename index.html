@@ -54,6 +54,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body class="dark-theme">
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -317,7 +318,7 @@
                 <div class="subtitle-bar"></div>
             </div>
             
-            <div class="timeline-horizontal reveal-up">
+            <div class="timeline-horizontal reveal-up" tabindex="0" aria-label="Education Timeline">
                 <div class="timeline-line-h">
                     <div class="timeline-progress-h"></div>
                 </div>
@@ -592,12 +593,20 @@
                     </a>
                     
                     <div class="c-card glass-card hover-lift">
-                        <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="c-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
                         <div class="c-info">
                             <span>Location</span>
                             <strong>Vadlamudi, Guntur, India</strong>
                         </div>
                     </div>
+                    
+                    <a href="https://github.com/ksumanasri" target="_blank" rel="noopener noreferrer" class="c-card glass-card hover-lift magnetic" aria-label="GitHub Profile">
+                        <div class="c-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+                        <div class="c-info">
+                            <span>Code</span>
+                            <strong>GitHub</strong>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

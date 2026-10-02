@@ -94,9 +94,9 @@ ul { list-style: none; }
    ========================================================================== */
 .global-bg { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .bg-base { position: absolute; inset: 0; background: linear-gradient(180deg, var(--clr-navy) 0%, var(--clr-deep-blue) 100%); }
-.bg-mesh { position: absolute; inset: -50%; background: radial-gradient(circle at 30% 20%, rgba(0, 87, 255, 0.1) 0%, transparent 40%), radial-gradient(circle at 80% 60%, rgba(138, 43, 226, 0.08) 0%, transparent 40%); animation: meshMove 20s infinite alternate linear; }
+.bg-mesh { position: absolute; inset: -50%; background: radial-gradient(circle at 30% 20%, rgba(0, 87, 255, 0.05) 0%, transparent 40%), radial-gradient(circle at 80% 60%, rgba(138, 43, 226, 0.04) 0%, transparent 40%); animation: meshMove 20s infinite alternate linear; }
 .bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(circle at 50% 50%, black, transparent 80%); -webkit-mask-image: radial-gradient(circle at 50% 50%, black, transparent 80%); opacity: 0.6; }
-.bg-noise { position: absolute; inset: 0; opacity: 0.02; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>'); mix-blend-mode: overlay; }
+.bg-noise { position: absolute; inset: 0; opacity: 0.01; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>'); mix-blend-mode: overlay; }
 .bg-particles { position: absolute; inset: 0; z-index: 1; }
 .cursor-spotlight { position: absolute; width: 800px; height: 800px; background: radial-gradient(circle, rgba(0, 240, 255, 0.04) 0%, transparent 60%); border-radius: 50%; transform: translate(-50%, -50%); z-index: 2; opacity: 0; transition: opacity 0.3s; }
 
@@ -388,7 +388,7 @@ ul { list-style: none; }
 .footer-links a { color: var(--clr-gray); font-size: 0.95rem; transition: var(--trans-fast); }
 .footer-links a:hover { color: var(--clr-cyan); }
 .footer-contact { display: flex; gap: 16px; }
-.footer-contact a, .footer-contact span { width: 40px; height: 40px; background: var(--surface-glass); border: 1px solid var(--border-glass); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--clr-gray); transition: var(--trans-fast); cursor: pointer; }
+.footer-contact a, .footer-contact span { width: 48px; height: 48px; background: var(--surface-glass); border: 1px solid var(--border-glass); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--clr-gray); transition: var(--trans-fast); cursor: pointer; }
 .footer-contact a:hover { background: var(--clr-cyan); color: var(--clr-navy); border-color: var(--clr-cyan); transform: translateY(-3px); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 0.85rem; }
