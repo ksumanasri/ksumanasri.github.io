@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">KS portfolio icon</title>
+  <desc id="desc">Cyan KS monogram on a dark background.</desc>
+  <rect width="64" height="64" rx="14" fill="#030914"/>
+  <path d="M15 14h8v14l13-14h11L33 30l15 20H37L25 35l-2 2v13h-8z" fill="#00f0ff"/>
+  <path d="M48 14v8H36v7h10v8H36v7h12v8H28V14z" fill="#ffffff" opacity=".92"/>
+</svg>
